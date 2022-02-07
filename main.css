@@ -1,0 +1,108 @@
+html, body {
+    height: 98%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sidebar {
+    padding: 8px 0;
+    float: left;
+    width: 20%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.sidebar ul {
+    padding-inline-start: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.sidebar li {
+    display: block;
+}
+
+.sidebar a {
+    padding: 4px 4px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2196F3;
+    display: inline-block;
+}
+
+.sidebar a:hover {
+    color: #064579;
+}
+
+.sidebar label:hover {
+    cursor: pointer;
+}
+
+.sidebar ul li > input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+}
+
+.sidebar ul li ul li > input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+}
+
+.sidebar ul li ul {
+    overflow-y: hidden;
+    height: 0;
+    transition: height .3s ease;
+}
+
+.sidebar ul li > input[type="checkbox"]:checked ~ ul {
+    height: auto;
+    overflow: visible;
+}
+
+.sidebar label:before {
+  content: "[+]";
+}
+
+.sidebar ul li > input[type="checkbox"]:checked ~ label:before {
+  content: "[-]";
+}
+
+.sidebar ul li ul li > input[type="checkbox"]:checked ~ label:before {
+  content: "[-]";
+}
+
+.content {
+    float: left;
+    width: 60%;
+    height: 100%;
+    overflow: scroll;
+    padding: 0 20px;
+}
+
+.content h1 {
+    margin: 0;
+    padding: 16px 0px;
+}
+
+.content h2 {
+    margin: 0;
+    padding: 12px 0px;
+}
+
+.content h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
