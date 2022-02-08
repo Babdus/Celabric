@@ -7,14 +7,15 @@ html, body {
 .column {
     display: inline-block;
     vertical-align: top;
+    height: 100%;
+    overflow: scroll;
 }
 
 .sidebar {
     padding: 8px 0;
     float: left;
-    width: 20%;
-    height: 100%;
-    overflow: scroll;
+    width: 180px;
+    margin-left: calc(calc(100% - 1080px) / 2)
 }
 
 .sidebar ul {
@@ -43,6 +44,17 @@ html, body {
     cursor: pointer;
 }
 
+.sidebar .menu {
+    padding: 4px 4px 4px 12px;
+    font-size: 20px;
+    color: #2196F3;
+}
+
+.sidebar > input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+}
+
 .sidebar ul li > input[type="checkbox"] {
     position: absolute;
     left: -100vw;
@@ -53,10 +65,21 @@ html, body {
     left: -100vw;
 }
 
+.sidebar ul {
+    overflow-y: hidden;
+    height: 0;
+    transition: height .3s ease;
+}
+
 .sidebar ul li ul {
     overflow-y: hidden;
     height: 0;
     transition: height .3s ease;
+}
+
+.sidebar > input[type="checkbox"]:checked ~ ul {
+    height: auto;
+    overflow: visible;
 }
 
 .sidebar ul li > input[type="checkbox"]:checked ~ ul {
@@ -66,6 +89,10 @@ html, body {
 
 .sidebar label:before {
   content: "[+]";
+}
+
+.sidebar > input[type="checkbox"]:checked ~ label:before {
+    content: "[-]";
 }
 
 .sidebar ul li > input[type="checkbox"]:checked ~ label:before {
@@ -78,9 +105,7 @@ html, body {
 
 .content {
     float: left;
-    width: 60%;
-    height: 100%;
-    overflow: scroll;
+    width: 680px;
     padding: 0 20px;
 }
 
@@ -99,10 +124,45 @@ html, body {
     padding: 10px 0;
 }
 
+.content .message {
+    border: 1px solid #888;
+    border-radius: 3px;
+    background: #ffffaa;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.content p {
+    text-align: justify;
+}
+
 .sidebar::-webkit-scrollbar {
     display: none;
 }
 
 .content::-webkit-scrollbar {
     display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+    .sidebar {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+        width: calc(100% - 220px);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .sidebar {
+        width: 100%;
+        height: initial;
+    }
+
+    .content {
+        width: calc(100% - 40px);
+    }
 }

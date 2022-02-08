@@ -7,9 +7,17 @@
 </head>
 <body>
     <div class="column sidebar">
+        <input type="checkbox" name="collapse" id="handle-menu" checked>
+        <span class="menu">Menu</span><label for="handle-menu"></label>
         <ul>
             <li>
-                <a href="#home">Home</a>
+                <input type="checkbox" name="collapse" id="handle-introduction">
+                <a href="#introduction">Introduction</a><label for="handle-introduction"></label>
+                <ul>
+                    <li>
+                        <a href="#tips">Tips</a>
+                    </li>
+                </ul>
             </li>
             <li>
                 <a href="#phonology">Phonology</a>
@@ -119,23 +127,39 @@
         </ul>
     </div>
     <div class="column content">
-        <div id="home">
-            <h1>Home</h1>
+        <div class="message">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim.
-                In porttitor sem id velit lobortis aliquam. Duis et purus ac orci porttitor luctus at quis leo.
-                Mauris vulputate pellentesque est, sit amet egestas tellus facilisis sit amet. Cras sodales bibendum tellus, a gravida tortor hendrerit sed.
-                Pellentesque blandit posuere nisl, sit amet cursus nisl dignissim non.
+                DISCLAIMER!
             </p>
             <p>
-                Vivamus at orci sit amet elit lacinia posuere sit amet malesuada elit. Duis quis luctus magna. Phasellus pharetra urna a dolor vulputate ultrices.
-                Nam ornare orci justo, et fringilla lacus. Etiam tristique enim sed enim tempus tincidunt. Fusce rutrum dui at erat iaculis suscipit.
-                Aenean id urna sit amet arcu pulvinar accumsan.
-                Aenean malesuada, nisi sed ultricies tempus, elit nisl interdum leo, sit amet bibendum eros arcu pretium nisi.
-                Nam magna dolor, lacinia adipiscing iaculis ac, viverra sit amet ligula. Fusce vitae est sit amet ipsum iaculis molestie a ac nisi.
-                Curabitur porta nunc quis magna interdum nec hendrerit ligula suscipit. Curabitur non accumsan sapien.
-                Donec non ligula a lorem lobortis scelerisque ac a sem. Sed porta blandit odio a ullamcorper.
+                This is not a final form of the Celabric language. I am now in the process of translating its
+                description from my native language Georgian into English. If you visit this page some time after, the
+                content will be updated.
             </p>
+        </div>
+        <div id="introduction">
+            <h1>1. Introduction</h1>
+            <p>
+                Celabric is a constructed language which I have been working on since the year 2000. At first as a fun
+                way to polish up my invented country and its characteristics, it then advanced to an independent passion
+                of mine; A two-page vocabulary grew into a full book filled with a lots of grammar, pronunciation and
+                terrifyingly complicated script.
+            </p>
+            <p>
+                Although on the way I not once had to completely scratch out the whole grammar, vocabulary or even
+                phonology, the one thing that persevered was the tendency of the language to have a minimal set of words
+                (in this case stems) that a learner has to memorize in order to be able to understand any text or be
+                able to form any sentence consistently. Consequently, the complicated part fell onto grammar, and albeit
+                not being simple, it nonetheless is well-structured. Even though the clear direction was an optimization,
+                I didn't abandon the humanly natural and aesthetically pleasing aspects of the language. Hence, the
+                result is a some kind of chimera seeing themself as a phoenix.
+            </p>
+            <div id="tips">
+                <h2>1.1. Tips</h2>
+                <p>
+
+                </p>
+            </div>
         </div>
         <div id="phonology">
             <h1>Phonology</h1>
