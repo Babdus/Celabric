@@ -14,12 +14,12 @@ html, body {
 .sidebar {
     padding: 8px 0;
     float: left;
-    width: 180px;
-    margin-left: calc(calc(100% - 1080px) / 2)
+    width: 240px;
+    margin-left: calc(calc(100% - 1200px) / 2)
 }
 
 .sidebar ul {
-    padding-inline-start: 20px;
+    padding-inline-start: 12px;
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -136,6 +136,30 @@ html, body {
     text-align: justify;
 }
 
+.content table {
+    border: 1px solid #888;
+    border-collapse: collapse;
+}
+
+.content table th, .content table td {
+    border: 1px solid #888;
+    padding: 10px;
+}
+
+.content table .table-title {
+    background: #eee;
+    font-weight: normal;
+}
+
+.content table.hidden, .content table.hidden th, .content table.hidden td {
+    border: 0;
+}
+
+.ipa {
+    color: #9f81fb;
+    font-weight: bold;
+}
+
 .sidebar::-webkit-scrollbar {
     display: none;
 }
@@ -144,15 +168,15 @@ html, body {
     display: none;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1200px) {
     .sidebar {
         margin-left: 0;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
     .content {
-        width: calc(100% - 220px);
+        width: calc(100% - 280px);
     }
 }
 

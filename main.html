@@ -20,7 +20,29 @@
                 </ul>
             </li>
             <li>
-                <a href="#phonology">Phonology</a>
+                <input type="checkbox" name="collapse" id="handle-phonology">
+                <a href="#phonology">Phonology</a><label for="handle-phonology"></label>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="collapse" id="handle-consonants">
+                        <a href="#consonants">Consonants</a><label for="handle-consonants"></label>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="collapse" id="handle-consonant-pronunciation">
+                                <a href="#consonant-pronunciation">Pronunciation</a><label for="handle-consonant-pronunciation"></label>
+                                <ul>
+                                    <li>
+                                        <a href="#plosives">Plosives</a>
+                                    </li>
+                                    <li>
+                                        <a href="#allophones">Allophones</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
             </li>
             <li>
                 <input type="checkbox" name="collapse" id="handle-morphology">
@@ -137,48 +159,352 @@
                 content will be updated.
             </p>
         </div>
-        <div id="introduction">
-            <h1>1. Introduction</h1>
-            <p>
-                Celabric is a constructed language which I have been working on since the year 2000. At first as a fun
-                way to polish up my invented country and its characteristics, it then advanced to an independent passion
-                of mine; A two-page vocabulary grew into a full book filled with a lots of grammar, pronunciation and
-                terrifyingly complicated script.
-            </p>
-            <p>
-                Although on the way I not once had to completely scratch out the whole grammar, vocabulary or even
-                phonology, the one thing that persevered was the tendency of the language to have a minimal set of words
-                (in this case stems) that a learner has to memorize in order to be able to understand any text or be
-                able to form any sentence consistently. Consequently, the complicated part fell onto grammar, and albeit
-                not being simple, it nonetheless is well-structured. Even though the clear direction was an optimization,
-                I didn't abandon the humanly natural and aesthetically pleasing aspects of the language. Hence, the
-                result is a some kind of chimera seeing themself as a phoenix.
-            </p>
-            <div id="tips">
-                <h2>1.1. Tips</h2>
-                <p>
-
-                </p>
-            </div>
-        </div>
-        <div id="phonology">
-            <h1>Phonology</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim.
-                In porttitor sem id velit lobortis aliquam. Duis et purus ac orci porttitor luctus at quis leo.
-                Mauris vulputate pellentesque est, sit amet egestas tellus facilisis sit amet. Cras sodales bibendum tellus, a gravida tortor hendrerit sed.
-                Pellentesque blandit posuere nisl, sit amet cursus nisl dignissim non.
-            </p>
-            <p>
-                Vivamus at orci sit amet elit lacinia posuere sit amet malesuada elit. Duis quis luctus magna. Phasellus pharetra urna a dolor vulputate ultrices.
-                Nam ornare orci justo, et fringilla lacus. Etiam tristique enim sed enim tempus tincidunt. Fusce rutrum dui at erat iaculis suscipit.
-                Aenean id urna sit amet arcu pulvinar accumsan.
-                Aenean malesuada, nisi sed ultricies tempus, elit nisl interdum leo, sit amet bibendum eros arcu pretium nisi.
-                Nam magna dolor, lacinia adipiscing iaculis ac, viverra sit amet ligula. Fusce vitae est sit amet ipsum iaculis molestie a ac nisi.
-                Curabitur porta nunc quis magna interdum nec hendrerit ligula suscipit. Curabitur non accumsan sapien.
-                Donec non ligula a lorem lobortis scelerisque ac a sem. Sed porta blandit odio a ullamcorper.
-            </p>
-        </div>
+        <h1 id="introduction">1. Introduction</h1>
+        <p>
+            Celabric is a constructed language which I have been working on since the year 2000. At first as a fun
+            way to polish up my invented country and its characteristics, it then advanced to an independent passion
+            of mine; A two-page vocabulary grew into a full book filled with a lots of grammar, pronunciation and
+            terrifyingly complicated script.
+        </p>
+        <p>
+            Although on the way I not once had to completely scratch out the whole grammar, vocabulary or even
+            phonology, the one thing that persevered was the tendency of the language to have a minimal set of words
+            (in this case stems) that a learner has to memorize in order to be able to understand any text or be
+            able to form any sentence consistently. Consequently, the complicated part fell onto grammar, and albeit
+            not being simple, it nonetheless is well-structured. Even though the clear direction was an
+            optimization, I didn't abandon the humanly natural and aesthetically pleasing aspects of the language.
+            Hence, the result is a some kind of chimera seeing themself as a phoenix.
+        </p>
+        <h2 id="tips">1.1. Tips</h2>
+        <p>
+            Because Celabric script is not very easily comprehendible, every word, particle or phoneme
+            throughout the text will be written with an IPA (International Phonetic Alphabet) transcription as
+            well.
+        </p>
+        <h1 id="phonology">2. Phonology</h1>
+        <p>
+            In Celabric there are 28 consonants and 7 vowels in total.
+        </p>
+        <h2 id="consonants">2.1. Consonants</h2>
+        <p>
+            There are 12 plosives, 10 fricatives, 2 affricates and 4 sonorants. Here are all consonants arranged by the place and manner of articulation:
+        </p>
+        <table>
+            <tr>
+                <th colspan="2"></th>
+                <th class="table-title">Bilabial</th>
+                <th class="table-title">Labiodental</th>
+                <th class="table-title">Alveolar</th>
+                <th class="table-title">Postalveolar</th>
+                <th class="table-title">Palatal</th>
+                <th class="table-title">Velar</th>
+            </tr>
+            <tr>
+                <td class="table-title" rowspan="3">Plosive</td>
+                <td class="table-title">Voiceless</td>
+                <td><span class="ipa">p</span></td>
+                <td></td>
+                <td><span class="ipa">t</span></td>
+                <td></td>
+                <td><span class="ipa">c</span></td>
+                <td><span class="ipa">k</span></td>
+            </tr>
+            <tr>
+                <td class="table-title">Voiced</td>
+                <td><span class="ipa">b</span></td>
+                <td></td>
+                <td><span class="ipa">d</span></td>
+                <td></td>
+                <td><span class="ipa">&#607;</span></td>
+                <td><span class="ipa">g</span></td>
+            </tr>
+            <tr>
+                <td class="table-title">Voiceless Aspirated</td>
+                <td><span class="ipa">p&#688;</span></td>
+                <td></td>
+                <td><span class="ipa">t&#688;</span></td>
+                <td></td>
+                <td><span class="ipa">c&#688;</span></td>
+                <td><span class="ipa">k&#688;</span></td>
+            </tr>
+            <tr>
+                <td class="table-title" rowspan="2">Fricative</td>
+                <td class="table-title">Voiced</td>
+                <td></td>
+                <td><span class="ipa">v</span></td>
+                <td><span class="ipa">z</span></td>
+                <td><span class="ipa">&#658;</span></td>
+                <td><span class="ipa">&#669;</span></td>
+                <td><span class="ipa">&#611;</span></td>
+            </tr>
+            <tr>
+                <td class="table-title">Voiceless</td>
+                <td></td>
+                <td><span class="ipa">f</span></td>
+                <td><span class="ipa">s</span></td>
+                <td><span class="ipa">&#643;</span></td>
+                <td><span class="ipa">&ccedil;</span></td>
+                <td><span class="ipa">x</span></td>
+            </tr>
+            <tr>
+                <td class="table-title" colspan="2">Affricate</td>
+                <td></td>
+                <td></td>
+                <td><span class="ipa">ts</span></td>
+                <td><span class="ipa">t&#643;</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="table-title" colspan="2">Nasal</td>
+                <td><span class="ipa">m</span></td>
+                <td></td>
+                <td><span class="ipa">n</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="table-title" colspan="2">Tap</td>
+                <td></td>
+                <td></td>
+                <td><span class="ipa">r</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="table-title" colspan="2">Lateral</td>
+                <td></td>
+                <td></td>
+                <td><span class="ipa">l</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <p>
+            As you can see the plosives are represented with three distinct phonemes in each place of articulation,
+            the fricatives are in pairs and the rest are singles.
+        </p>
+        <h3 id="consonant-pronunciation">2.1.1. Pronunciation of consonants</h3>
+        <table class="hidden">
+            <tr>
+                <td><span class="ipa">p</span></td>
+                <td>
+                    Unaspirated voiceless bilabial plosive. As in Spanish <strong>p</strong>oco. Approximately as in
+                    English s<strong>p</strong>in but even less breath after p.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">b</span></td>
+                <td>
+                    Voiced bilabial plosive. As in English <strong>b</strong>oy.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">p&#688;</span></td>
+                <td>
+                    Aspirated voiceless bilabial plosive. As in Georgian <strong>ფ</strong>ონი or as English
+                    <strong>p</strong>in, but with slightly more breath after p.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">t</span></td>
+                <td>
+                    Unaspirated voiceless alveolar plosive. As in Spanish <strong>t</strong>u. Approximately as in
+                    English s<strong>t</strong>op but even less breath after t.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">d</span></td>
+                <td>
+                    Voiced alveolar plosive. As in English <strong>d</strong>og.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">t&#688;</span></td>
+                <td>
+                    Aspirated voiceless alveolar plosive. As in Georgian <strong>თ</strong>ოკი or as in English
+                    <strong>t</strong>in, but with slightly more breath after t.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">c</span></td>
+                <td>
+                    Unaspirated voiceless palatal plosive. As in French or Catalan <strong>q</strong>ui or as in
+                    Albanian Sh<strong>q</strong>ip. Loosely approximately as in English ky in boo<strong>k
+                    y</strong>ear but pronounced with no breath after k and the tongue should be pressed against the hard
+                    palate (the place where the tongue is while pronouncing y in <strong>y</strong>es).
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">&#607;</span></td>
+                <td>
+                    Voiced palatal plosive. As in Hungarian ma<strong>gy</strong>ar or as in Irish
+                    gaeil<strong>g</strong>e. Loosely approximately as in English gy in do<strong>g y</strong>ear but
+                    tongue should be pressed against the hard palate (the place where the tongue is while pronouncing y
+                    in <strong>y</strong>es).
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">c&#688;</span></td>
+                <td>
+                    Aspirated voiceless palatal plosive. Something like Irish <strong>c</strong>eist. Loosely
+                    approximately as in English ky in boo<strong>k y</strong>ear but pronounced with more breath after k
+                    and the tongue should be pressed against the hard palate (the place where the tongue is while
+                    pronouncing y in <strong>y</strong>es).
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">k</span></td>
+                <td>
+                    Unaspirated voiceless velar plosive. As in Spanish po<strong>c</strong>o. Approximately as in
+                    English s<strong>k</strong>in but even less breath after k.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">g</span></td>
+                <td>
+                    Voiced velar plosive. As in English do<strong>g</strong>.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">k&#688;</span></td>
+                <td>
+                    Aspirated voiceless velar plosive. As in Georgian <strong>ქ</strong>არი or as in English
+                    <strong>k</strong>in, but with slightly more breath after k.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">v</span></td>
+                <td>
+                    Voiced labiodental fricative. As in English <strong>v</strong>ery.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">f</span></td>
+                <td>
+                    Voiceless labiodental fricative. As in English <strong>f</strong>our.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">z</span></td>
+                <td>
+                    Voiced alveolar sibilant fricative. As in English <strong>z</strong>ero.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">s</span></td>
+                <td>
+                    Voiceless alveolar sibilant fricative. As in English <strong>s</strong>ame.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">&#658;</span></td>
+                <td>
+                    Voiced postalveolar sibilant fricative. As in English u<strong>s</strong>ual.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">&#643;</span></td>
+                <td>
+                    Voiceless postalveolar sibilant fricative. As in English <strong>sh</strong>ame.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">&#669;</span></td>
+                <td>
+                    Voiced palatal fricative. As in Spanish amari<strong>ll</strong>a, as in German
+                    <strong>j</strong>acke or as in English <strong>y</strong>es with overenunciating y.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">&ccedil;</span></td>
+                <td>
+                    Voiceless palatal fricative. As in German i<strong>ch</strong> or approximately as in English
+                    <strong>hu</strong>e.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">&#611;</span></td>
+                <td>
+                    Voiced velar fricative. As in Greek <strong>γ</strong>αλα or as in Icelandic sa<strong>g</strong>a.
+                    No english equivalent. Something like g in dog but with not touching the tongue on the soft palate.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">x</span></td>
+                <td>
+                    Voiceless velar fricative. As in Scottish lo<strong>ch</strong> or as in Scouse English
+                    boo<strong>k</strong>.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">ts</span></td>
+                <td>
+                    Voiceless alveolar affricate. As in English wha<strong>ts</strong>oever.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">t&#643;</span></td>
+                <td>
+                    Voiceless postalveolar affricate. As in English <strong>ch</strong>ur<strong>ch</strong>.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">m</span></td>
+                <td>
+                    Voiced bilabial nasal. As in English <strong>m</strong>an.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">n</span></td>
+                <td>
+                    Voiced alveolar nasal. As in English <strong>n</strong>ame.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">r</span></td>
+                <td>
+                    Voiced alveolar tap. As in Spanish ca<strong>r</strong>o or as in American English
+                    be<strong>tt</strong>er.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="ipa">l</span></td>
+                <td>
+                    Voiced lateral alveolar approximant. As in English <strong>l</strong>ong.
+                </td>
+            </tr>
+        </table>
+        <h4 id="plosives">2.1.1.1. Plosives</h4>
+        <p>
+            As you can see above, there are is a phonemic distinction between unaspirated and aspirated plosives. Even
+            though in english we do not differentiate them, there are numerous languages which treat them as a distinct
+            phonemes. The example is Icelandic and Ancient Greek. Frankly, Ancient Greek has a quite similar phonemic
+            paradigm as Celabric, as it has a three-way distinction between plosives of each articulation place - voiced,
+            voiceless and aspirated voiceless; while icelandic lacks voiced plosives.
+        </p>
+        <h4 id="allophones">2.1.1.2. Allophones</h4>
+        <p>
+            In the fast speech the <span class="ipa">&#669;</span> could be realized as an approximant
+            <span class="ipa">j</span> especially at the word-final position. The <span class="ipa">r</span> could be
+            realized as a voiceless alveolar tap <span class="ipa">r&#805;</span> before a voiceless consonant or at the word-final position, or as a
+            voiceless aspirated alveolar tap <span class="ipa">r&#805;&#688;</span> before an aspirated voiceless consonant.
+        </p>
+        <p>
+            The plosives before nasal consonants tend to change pronunciation if both of them are pronounced at the same
+            articulation place. <span class="ipa">pm</span> becomes <span class="ipa">&#660;m</span> where
+            <span class="ipa">&#660;</span> is a glottal stop (a consonant between the vowels of "uh-oh").
+            <span class="ipa">tn</span> becomes <span class="ipa">&#660;n</span>;
+            <span class="ipa">bm</span> becomes <span class="ipa">&#660;&#814;m</span> where
+            <span class="ipa"> &#814;</span> denotes that <span class="ipa">m</span> is pre-voiced;
+            <span class="ipa">dn</span> becomes <span class="ipa">&#660;&#814;n</span>;
+            <span class="ipa">p&#688;m</span> becomes <span class="ipa">&#660;&#688;m</span> meaning that
+            <span class="ipa">m</span> is pre-aspirated; and <span class="ipa">t&#688;n</span> becomes
+            <span class="ipa">&#660;&#688;n</span>.
+        </p>
         <div id="morphology">
             <h1>Morphology</h1>
             <p>
