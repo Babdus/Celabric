@@ -15,7 +15,7 @@ html, body {
     padding: 8px 0;
     float: left;
     width: 240px;
-    margin-left: calc(calc(100% - 1200px) / 2)
+    margin-left: calc(calc(100% - 1200px) / 2);
 }
 
 .sidebar ul {
@@ -45,7 +45,7 @@ html, body {
 }
 
 .sidebar .menu {
-    padding: 4px 4px 4px 12px;
+    padding: 4px 4px 4px 4px;
     font-size: 20px;
     color: #2196F3;
 }
