@@ -106,7 +106,8 @@ html, body {
 .content {
     float: left;
     width: 680px;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: calc(calc(100% - 680px) / 2);
 }
 
 .content h1 {
@@ -186,11 +187,15 @@ html, body {
     .sidebar {
         margin-left: 0;
     }
+    .content {
+        padding-right: calc(100% - 940px);
+    }
 }
 
 @media only screen and (max-width: 960px) {
     .content {
         width: calc(100% - 280px);
+        padding-right: 20px;
     }
 }
 
