@@ -147,7 +147,7 @@ html, body {
     padding: 10px;
 }
 
-.content table .table-title {
+.content table th {
     background: #eee;
     font-weight: normal;
 }
