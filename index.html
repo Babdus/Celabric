@@ -1563,15 +1563,545 @@
             <audio id="audio-trioer"><source src="audio/trioer.mp3" type="audio/mp3"></audio>
             <button class="play-button" onclick="document.getElementById('audio-trioer').play()">&#9658;</button>.
         </p>
-            <div id="tenses">
-                <h3>Tenses</h3>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-            </div>
+        <h3 id="tenses">Tenses, aspect and mood</h3>
+        <p>
+            Because tense, aspect and mood are interconnected for defining exact relation of the action in the time, I
+            am writing about them together. There are 6 tenses: present, general, past, indefinite past, future and
+            indefinite future. Aspect can be simple or continuous and the moods are indicative, subjunctive and
+            conditional. Only present tense does not have continuous aspect, every other combination is possible.
+            Make sure to notice that these categories do not translate into English corresponding categories
+            straightforwardly, for example the best translation to the Celabric present simple would be 'is doing' and
+            not 'does', because 'does' is the best translation for the Celabric general simple tense.
+        </p>
+        <table>
+            <tr>
+                <th>Tense</th>
+                <th>Aspect</th>
+                <th>Mood</th>
+                <th>Suffix</th>
+                <th>Example</th>
+                <th>Example translation</th>
+            </tr>
+            <tr>
+                <th>Present</th>
+                <th>simple</th>
+                <th>indicative</th>
+                <td></td>
+                <td>
+                    <span class="ipa">t&oslash;r</span>
+                    <button class="play-button" onclick="document.getElementById('audio-toer').play()">&#9658;</button>
+                </td>
+                <td>(s)he is eating</td>
+            </tr>
+            <tr>
+                <th>Present</th>
+                <th>simple</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">&#618;</span>
+                    <button class="play-button" onclick="document.getElementById('audio-i').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&#618;</span>
+                    <audio id="audio-toeri"><source src="audio/toeri.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toeri').play()">&#9658;</button>
+                </td>
+                <td>if (s)he is eating</td>
+            </tr>
+            <tr>
+                <th>Present</th>
+                <th>simple</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">&#593;</span>
+                    <button class="play-button" onclick="document.getElementById('audio-a').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&#593;</span>
+                    <audio id="audio-toera"><source src="audio/toera.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toera').play()">&#9658;</button>
+                </td>
+                <td>(s)he would be eating now</td>
+            </tr>
+            <tr>
+                <th>General</th>
+                <th>simple</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">t</span>
+                    <button class="play-button" onclick="document.getElementById('audio-t').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rt</span>
+                    <audio id="audio-toert"><source src="audio/toert.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toert').play()">&#9658;</button>
+                </td>
+                <td>(s)he eats</td>
+            </tr>
+            <tr>
+                <th>General</th>
+                <th>simple</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">t&#643;&#618;</span>
+                    <audio id="audio-tshi"><source src="audio/tshi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-tshi').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rt&#643;&#618;</span>
+                    <audio id="audio-toertshi"><source src="audio/toertshi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toertshi').play()">&#9658;</button>
+                </td>
+                <td>if (s)he would eat</td>
+            </tr>
+            <tr>
+                <th>General</th>
+                <th>simple</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">n&#593;</span>
+                    <audio id="audio-na"><source src="audio/na.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-na').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rn&#593;</span>
+                    <audio id="audio-toerna"><source src="audio/toerna.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerna').play()">&#9658;</button>
+                </td>
+                <td>(s)he would eat</td>
+            </tr>
+            <tr>
+                <th>General</th>
+                <th>continuous</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">&aelig;</span>
+                    <button class="play-button" onclick="document.getElementById('audio-e').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&aelig;</span>
+                    <audio id="audio-toere"><source src="audio/toere.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toere').play()">&#9658;</button>
+                </td>
+                <td>(s)he eats habitually</td>
+            </tr>
+            <tr>
+                <th>General</th>
+                <th>continuous</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">&aelig;&#669;</span>
+                    <audio id="audio-ej"><source src="audio/ej.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-ej').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&aelig;&#669;</span>
+                    <audio id="audio-toerej"><source src="audio/toerej.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerej').play()">&#9658;</button>
+                </td>
+                <td>if (s)he would eat habitually</td>
+            </tr>
+            <tr>
+                <th>General</th>
+                <th>continuous</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">&aelig;n</span>
+                    <audio id="audio-en"><source src="audio/en.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-en').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&aelig;n</span>
+                    <audio id="audio-toeren"><source src="audio/toeren.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toeren').play()">&#9658;</button>
+                </td>
+                <td>(s)he would eat habitually</td>
+            </tr>
+            <tr>
+                <th>Past</th>
+                <th>simple</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">xt</span>
+                    <audio id="audio-xt"><source src="audio/xt.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-xt').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rxt</span>
+                    <audio id="audio-toerxt"><source src="audio/toerxt.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerxt').play()">&#9658;</button>
+                </td>
+                <td>(s)he ate</td>
+            </tr>
+            <tr>
+                <th>Past</th>
+                <th>simple</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">xt&#643;&#618;</span>
+                    <audio id="audio-xtshi"><source src="audio/xtshi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-xtshi').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rxt&#643;&#618;</span>
+                    <audio id="audio-toerxtshi"><source src="audio/toerxtshi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerxtshi').play()">&#9658;</button>
+                </td>
+                <td>if (s)he ate</td>
+            </tr>
+            <tr>
+                <th>Past</th>
+                <th>simple</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">kn&#593;</span>
+                    <audio id="audio-kna"><source src="audio/kna.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-kna').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rkn&#593;</span>
+                    <audio id="audio-toerkna"><source src="audio/toerkna.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerkna').play()">&#9658;</button>
+                </td>
+                <td>(s)he would have eaten</td>
+            </tr>
+            <tr>
+                <th>Past</th>
+                <th>continuous</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">&#611;&aelig;</span>
+                    <audio id="audio-ghe"><source src="audio/ghe.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-ghe').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&#611;&aelig;</span>
+                    <audio id="audio-toerghe"><source src="audio/toerghe.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerghe').play()">&#9658;</button>
+                </td>
+                <td>(s)he was eating</td>
+            </tr>
+            <tr>
+                <th>Past</th>
+                <th>continuous</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">&#669;&#618;</span>
+                    <audio id="audio-ji"><source src="audio/ji.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-ji').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&#669;&#618;</span>
+                    <audio id="audio-toerji"><source src="audio/toerji.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerji').play()">&#9658;</button>
+                </td>
+                <td>if (s)he has been eating</td>
+            </tr>
+            <tr>
+                <th>Past</th>
+                <th>continuous</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">g&aelig;n</span>
+                    <audio id="audio-gen"><source src="audio/gen.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-gen').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;g&aelig;n</span>
+                    <audio id="audio-toergen"><source src="audio/toergen.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toergen').play()">&#9658;</button>
+                </td>
+                <td>(s)he would have been eating</td>
+            </tr>
+            <tr>
+                <th>Indefinite past</th>
+                <th>simple</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">&#643;t</span>
+                    <audio id="audio-sht"><source src="audio/sht.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-sht').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&#643;t</span>
+                    <audio id="audio-toersht"><source src="audio/toersht.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toersht').play()">&#9658;</button>
+                </td>
+                <td>(s)he had eaten</td>
+            </tr>
+            <tr>
+                <th>Indefinite past</th>
+                <th>simple</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">&#643;t&#643;&#618;</span>
+                    <audio id="audio-shtshi"><source src="audio/shtshi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-shtshi').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&#643;t&#643;&#618;</span>
+                    <audio id="audio-toershtshi"><source src="audio/toershtshi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toershtshi').play()">&#9658;</button>
+                </td>
+                <td>if (s)he had eaten</td>
+            </tr>
+            <tr>
+                <th>Indefinite past</th>
+                <th>simple</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">cn&#593;</span>
+                    <audio id="audio-cna"><source src="audio/cna.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-cna').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rcn&#593;</span>
+                    <audio id="audio-toercna"><source src="audio/toercna.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toercna').play()">&#9658;</button>
+                </td>
+                <td>(s)he would have had eaten</td>
+            </tr>
+            <tr>
+                <th>Indefinite past</th>
+                <th>continuous</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">&#658;&aelig;</span>
+                    <audio id="audio-zhe"><source src="audio/zhe.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-zhe').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&#658;&aelig;</span>
+                    <audio id="audio-toerzhe"><source src="audio/toerzhe.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerzhe').play()">&#9658;</button>
+                </td>
+                <td>(s)he had been eating</td>
+            </tr>
+            <tr>
+                <th>Indefinite past</th>
+                <th>continuous</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">&#658;&#618;</span>
+                    <audio id="audio-zhi"><source src="audio/zhi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-zhi').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;r&#658;&#618;</span>
+                    <audio id="audio-toerzhi"><source src="audio/toerzhi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerzhi').play()">&#9658;</button>
+                </td>
+                <td>if (s)he had been eating</td>
+            </tr>
+            <tr>
+                <th>Indefinite past</th>
+                <th>continuous</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">&#607;&aelig;n</span>
+                    <audio id="audio-gjen"><source src="audio/gjen.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-gjen').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;&#607;&aelig;n</span>
+                    <audio id="audio-toergjen"><source src="audio/toergjen.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toergjen').play()">&#9658;</button>
+                </td>
+                <td>(s)he would have been eating in the indefinite past</td>
+            </tr>
+            <tr>
+                <th>Future</th>
+                <th>simple</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">ft</span>
+                    <audio id="audio-ft"><source src="audio/ft.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-ft').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rft</span>
+                    <audio id="audio-toerft"><source src="audio/toerft.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerft').play()">&#9658;</button>
+                </td>
+                <td>(s)he will eat</td>
+            </tr>
+            <tr>
+                <th>Future</th>
+                <th>simple</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">ft&#643;&#618;</span>
+                    <audio id="audio-ftshi"><source src="audio/ftshi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-ftshi').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rft&#643;&#618;</span>
+                    <audio id="audio-toerftshi"><source src="audio/toerftshi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerftshi').play()">&#9658;</button>
+                </td>
+                <td>if (s)he will eat</td>
+            </tr>
+            <tr>
+                <th>Future</th>
+                <th>simple</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">pn&#593;</span>
+                    <audio id="audio-pna"><source src="audio/pna.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-pna').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rpn&#593;</span>
+                    <audio id="audio-toerpna"><source src="audio/toerpna.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerpna').play()">&#9658;</button>
+                </td>
+                <td>(s)he would eat in the future</td>
+            </tr>
+            <tr>
+                <th>Future</th>
+                <th>continuous</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">v&aelig;</span>
+                    <audio id="audio-ve2"><source src="audio/ve2.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-ve2').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rv&aelig;</span>
+                    <audio id="audio-toerve"><source src="audio/toerve.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerve').play()">&#9658;</button>
+                </td>
+                <td>(s)he will be eating</td>
+            </tr>
+            <tr>
+                <th>Future</th>
+                <th>continuous</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">v&#618;</span>
+                    <audio id="audio-vi"><source src="audio/vi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-vi').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rv&#618;</span>
+                    <audio id="audio-toervi"><source src="audio/toervi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toervi').play()">&#9658;</button>
+                </td>
+                <td>if (s)he will be eating</td>
+            </tr>
+            <tr>
+                <th>Future</th>
+                <th>continuous</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">b&aelig;n</span>
+                    <audio id="audio-ben"><source src="audio/ben.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-ben').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;b&aelig;n</span>
+                    <audio id="audio-toerben"><source src="audio/toerben.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerben').play()">&#9658;</button>
+                </td>
+                <td>(s)he would be eating in the future</td>
+            </tr>
+            <tr>
+                <th>Indefinite future</th>
+                <th>simple</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">st</span>
+                    <audio id="audio-st"><source src="audio/st.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-st').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rst</span>
+                    <audio id="audio-toerst"><source src="audio/toerst.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerst').play()">&#9658;</button>
+                </td>
+                <td>(s)he will eat in the indefinite future</td>
+            </tr>
+            <tr>
+                <th>Indefinite future</th>
+                <th>simple</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">sts&#618;</span>
+                    <audio id="audio-stsi"><source src="audio/stsi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-stsi').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rsts&#618;</span>
+                    <audio id="audio-toerstsi"><source src="audio/toerstsi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerstsi').play()">&#9658;</button>
+                </td>
+                <td>if (s)he will eat in the indefinite future</td>
+            </tr>
+            <tr>
+                <th>Indefinite future</th>
+                <th>simple</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">tn&#593;</span>
+                    <audio id="audio-tna"><source src="audio/tna.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-tna').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rtn&#593;</span>
+                    <audio id="audio-toertna"><source src="audio/toertna.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toertna').play()">&#9658;</button>
+                </td>
+                <td>(s)he would eat in the indefinite future</td>
+            </tr>
+            <tr>
+                <th>Indefinite future</th>
+                <th>continuous</th>
+                <th>indicative</th>
+                <td>
+                    <span class="ipa">z&aelig;</span>
+                    <audio id="audio-ze"><source src="audio/ze.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-ze').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rz&aelig;</span>
+                    <audio id="audio-toerze"><source src="audio/toerze.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerze').play()">&#9658;</button>
+                </td>
+                <td>(s)he will be eating in the indefinite future</td>
+            </tr>
+            <tr>
+                <th>Indefinite future</th>
+                <th>continuous</th>
+                <th>subjunctive</th>
+                <td>
+                    <span class="ipa">z&#618;</span>
+                    <audio id="audio-zi"><source src="audio/zi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-zi').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rz&#618;</span>
+                    <audio id="audio-toerzi"><source src="audio/toerzi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerzi').play()">&#9658;</button>
+                </td>
+                <td>if (s)he will be eating in the indefinite future</td>
+            </tr>
+            <tr>
+                <th>Indefinite future</th>
+                <th>continuous</th>
+                <th>conditional</th>
+                <td>
+                    <span class="ipa">d&aelig;n</span>
+                    <audio id="audio-den"><source src="audio/den.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-den').play()">&#9658;</button>
+                </td>
+                <td>
+                    <span class="ipa">t&oslash;rd&aelig;n</span>
+                    <audio id="audio-toerden"><source src="audio/toerden.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-toerden').play()">&#9658;</button>
+                </td>
+                <td>(s)he would be eating in the indefinite future</td>
+            </tr>
+        </table>
             <div id="verb-structure">
                 <h3>Verb structure</h3>
                 <p>
