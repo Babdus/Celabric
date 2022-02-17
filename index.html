@@ -2208,25 +2208,220 @@
             <tr>
                 <th>Subject</th>
                 <td>
-                    <a class="tooltip" href="#word-r"><span class="ipa">r</span></a>,
+                    <a class="tooltip" href="#word-r"><span class="ipa">r</span></a>
+                    <button class="play-button" onclick="document.getElementById('audio-r').play()">&#9658;</button>,
                     <a class="tooltip" href="#word-er"><span class="ipa">&aelig;r</span></a>
+                    <audio id="audio-er"><source src="audio/er.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-er').play()">&#9658;</button>
                 </td>
-                <td><a class="tooltip" href="#word-troerer"><span class="ipa">tr&oslash;r&aelig;r</span></a></td>
+                <td>
+                    <a class="tooltip" href="#word-troerer"><span class="ipa">tr&oslash;r&aelig;r</span></a>
+                    <audio id="audio-troerer"><source src="audio/troerer.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-troerer').play()">&#9658;</button>
+                </td>
                 <td>Feeder</td>
             </tr>
             <tr>
                 <th>Direct object</th>
-                <td><a class="tooltip" href="#word-me"><span class="ipa">m&aelig;</span></a></td>
-                <td><a class="tooltip" href="#word-troerme"><span class="ipa">tr&oslash;rm&aelig;</span></a></td>
+                <td>
+                    <a class="tooltip" href="#word-me"><span class="ipa">m&aelig;</span></a>
+                    <audio id="audio-me"><source src="audio/me.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-me').play()">&#9658;</button>
+                </td>
+                <td>
+                    <a class="tooltip" href="#word-troerme"><span class="ipa">tr&oslash;rm&aelig;</span></a>
+                    <audio id="audio-troerme"><source src="audio/troerme.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-troerme').play()">&#9658;</button>
+                </td>
                 <td>Feedee (who is being fed)</td>
             </tr>
             <tr>
                 <th>Indirect object</th>
-                <td><a class="tooltip" href="#word-mi"><span class="ipa">m&#618;</span></a></td>
-                <td><a class="tooltip" href="#word-troermi"><span class="ipa">tr&oslash;rm&#618;</span></a></td>
+                <td>
+                    <a class="tooltip" href="#word-mi"><span class="ipa">m&#618;</span></a>
+                    <audio id="audio-mi"><source src="audio/mi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-mi').play()">&#9658;</button>
+                </td>
+                <td>
+                    <a class="tooltip" href="#word-troermi"><span class="ipa">tr&oslash;rm&#618;</span></a>
+                    <audio id="audio-troermi"><source src="audio/troermi.mp3" type="audio/mp3"></audio>
+                    <button class="play-button" onclick="document.getElementById('audio-troermi').play()">&#9658;</button>
+                </td>
                 <td>Food</td>
             </tr>
         </table>
+        <p>
+            <a class="tooltip" href="#word-er"><span class="ipa">&aelig;r</span></a> suffix instead of
+            <a class="tooltip" href="#word-r"><span class="ipa">r</span></a> is only used if another
+            <span class="ipa">r</span> is right before it.
+        </p>
+        <p>
+            You can derive nouns not only from the present tense of the verb. For example,
+            <a class="tooltip" href="#word-toerkhr"><span class="ipa">t&oslash;rk&#688;r</span></a>
+            <audio id="audio-toerkhr"><source src="audio/toerkhr.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-toerkhr').play()">&#9658;</button>
+            is 'the one who has eaten'.
+        </p>
+        <p>
+            Nouns can be derived from other parts of speech as well. With the addition af suffix
+            <a class="tooltip" href="#word-ne"><span class="ipa">n&aelig;</span></a> any adjective can be turned into
+            noun. For example,
+            <a class="tooltip" href="#word-jyfnaish"><span class="ipa">&#669;yfn&#593;&#618;&#643;</span></a>
+            <audio id="audio-jyfnaish"><source src="audio/jyfnaish.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-jyfnaish').play()">&#9658;</button>
+            is 'tall' and
+            <a class="tooltip" href="#word-jyfnaishne"><span class="ipa">&#669;yfn&#593;&#618;&#643;n&aelig;</span></a>
+            <audio id="audio-jyfnaishne"><source src="audio/jyfnaishne.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-jyfnaishne').play()">&#9658;</button>
+            will be 'something that is tall', or 'mountain' (
+            <a class="tooltip" href="#word-jy"><span class="ipa">&#669;y</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-jy').play()">&#9658;</button>
+            - 'to give birth' in the sixth theme (consequent action) will be
+            <a class="tooltip" href="#word-jyfna"><span class="ipa">&#669;yfn&#593;</span></a>
+            <audio id="audio-jyfna"><source src="audio/jyfna.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-jyfna').play()">&#9658;</button>
+            - 'to grow' and adjective derived from it
+            <a class="tooltip" href="#word-jyfnaish"><span class="ipa">&#669;yfn&#593;&#618;&#643;</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-jyfnaish').play()">&#9658;</button>
+            will be 'tall').
+        </p>
+        <p>
+            With the prefix
+            <a class="tooltip" href="#word-azh"><span class="ipa">&#593;&#658;</span></a>
+            <audio id="audio-azh"><source src="audio/azh.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-azh').play()">&#9658;</button>
+            the nouns of profession are made. For example,
+            <a class="tooltip" href="#word-azhdroerphr"><span class="ipa">&#593;&#658;dr&oslash;rp&#688;r</span></a>
+            <audio id="audio-azhdroerphr"><source src="audio/azhdroerphr.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-azhdroerphr').play()">&#9658;</button>
+            is 'cowherd' (
+            <a class="tooltip" href="#word-droerphr"><span class="ipa">dr&oslash;rp&#688;r</span></a>
+            <audio id="audio-droerphr"><source src="audio/droerphr.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-droerphr').play()">&#9658;</button>
+            - 'cow';
+            <a class="tooltip" href="#word-doer"><span class="ipa">d&oslash;r</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-doer').play()">&#9658;</button>
+            - 'to drink';
+            <a class="tooltip" href="#word-droer"><span class="ipa">dr&oslash;r</span></a>
+            <audio id="audio-droer"><source src="audio/droer.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-droer').play()">&#9658;</button>
+            - 'to let someone drink';
+            <a class="tooltip" href="#word-droerphr"><span class="ipa">dr&oslash;rp&#688;r</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-droerphr').play()">&#9658;</button>
+            - 'the one that will let someone drink (milk)', or 'cow').
+        </p>
+        <p>
+            With the prefix
+            <a class="tooltip" href="#word-osh"><span class="ipa">o&#643;</span></a>
+            <audio id="audio-osh"><source src="audio/osh.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-osh').play()">&#9658;</button>
+            the nouns of purpose are made. For example,
+            <a class="tooltip" href="#word-oshchrertr"><span class="ipa">o&#643;c&#688;r&aelig;rtr</span></a>
+            <audio id="audio-oshchrertr"><source src="audio/oshchrertr.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-oshchrertr').play()">&#9658;</button>
+            is '(reading) glasses' (
+            <a class="tooltip" href="#word-chrertr"><span class="ipa">c&#688;r&aelig;rtr</span></a>
+            <audio id="audio-chrertr"><source src="audio/chrertr.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-chrertr').play()">&#9658;</button>
+            - 'eye';
+            <a class="tooltip" href="#word-cher"><span class="ipa">c&#688;&aelig;r</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-cher').play()">&#9658;</button>
+            - 'to see';
+            <a class="tooltip" href="#word-chrer"><span class="ipa">c&#688;r&aelig;r</span></a>
+            <audio id="audio-chrer"><source src="audio/chrer.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-chrer').play()">&#9658;</button>
+            - 'to let someone see';
+            <a class="tooltip" href="#word-chrertr"><span class="ipa">c&#688;r&aelig;rtr</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-chrertr').play()">&#9658;</button>
+            - 'the thing that lets someone see', or 'eye').
+        </p>
+        <p>
+            With the prefix
+            <a class="tooltip" href="#word-uf"><span class="ipa">&#650;f</span></a>
+            <audio id="audio-uf"><source src="audio/uf.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-uf').play()">&#9658;</button>
+            the nouns of origin are made. For example,
+            <a class="tooltip" href="#word-ufjyfnaishne"><span class="ipa">&#650;f&#669;yfn&#593;&#618;&#643;n&aelig;</span></a>
+            <audio id="audio-ufjyfnaishne"><source src="audio/ufjyfnaishne.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-ufjyfnaishne').play()">&#9658;</button>
+            is 'mountaineer (a person from mountains)' (
+            <a class="tooltip" href="#word-jyfnaishne"><span class="ipa">&#669;yfn&#593;&#618;&#643;n&aelig;</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-jyfnaishne').play()">&#9658;</button>
+            - 'mountain').
+        </p>
+        <p>
+            With the prefix
+            <a class="tooltip" href="#word-uzh"><span class="ipa">&#650;&#658;</span></a>
+            <audio id="audio-uzh"><source src="audio/uzh.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-uzh').play()">&#9658;</button>
+            the general concepts are derived. For example,
+            <a class="tooltip" href="#word-uzhjyfnaish"><span class="ipa">&#650;&#658;&#669;yfn&#593;&#618;&#643;</span></a>
+            <audio id="audio-uzhjyfnaish"><source src="audio/uzhjyfnaish.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-uzhjyfnaish').play()">&#9658;</button>
+            is 'height' (
+            <a class="tooltip" href="#word-jyfnaish"><span class="ipa">&#669;yfn&#593;&#618;&#643;</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-jyfnaish').play()">&#9658;</button>
+            - 'tall').
+        </p>
+        <p>
+            With the prefix
+            <a class="tooltip" href="#word-li"><span class="ipa">l&#618;</span></a>
+            <audio id="audio-li"><source src="audio/li.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-li').play()">&#9658;</button>
+            are derived nouns that have some physical characteristic or property. For example,
+            <a class="tooltip" href="#word-litrerfratr"><span class="ipa">l&#618;tr&aelig;rfr&#593;tr</span></a>
+            <audio id="audio-litrerfratr"><source src="audio/litrerfratr.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-litrerfratr').play()">&#9658;</button>
+            is 'horseman' (
+            <a class="tooltip" href="#word-ter"><span class="ipa">t&aelig;r</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-ter').play()">&#9658;</button>
+            - 'to walk';
+            <a class="tooltip" href="#word-terfra"><span class="ipa">t&aelig;rfr&#593;</span></a>
+            <audio id="audio-terfra"><source src="audio/terfra.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-terfra').play()">&#9658;</button>
+            - 'to run';
+            <a class="tooltip" href="#word-trerfra"><span class="ipa">tr&aelig;rfr&#593;</span></a>
+            <audio id="audio-trerfra"><source src="audio/trerfra.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-trerfra').play()">&#9658;</button>
+            - 'to make someone run';
+            <a class="tooltip" href="#word-trerfratr"><span class="ipa">tr&aelig;rfr&#593;tr</span></a>
+            <audio id="audio-trerfratr"><source src="audio/trerfratr.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-trerfratr').play()">&#9658;</button>
+            - 'Someone that makes someone else run (with them)', or 'horse).
+        </p>
+        <p>
+            With the suffix
+            <a class="tooltip" href="#word-i"><span class="ipa">&#618;</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-i').play()">&#9658;</button>
+            the nouns of places are made. For example,
+            <a class="tooltip" href="#word-nefrai"><span class="ipa">n&aelig;fr&#593;&#618;</span></a>
+            <audio id="audio-nefrai"><source src="audio/nefrai.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-nefrai').play()">&#9658;</button>
+            is 'house' (
+            <a class="tooltip" href="#word-ne"><span class="ipa">n&aelig;</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-ne').play()">&#9658;</button>
+            - 'to be';
+            <a class="tooltip" href="#word-nefra"><span class="ipa">n&aelig;fr&#593;</span></a>
+            <audio id="audio-nefra"><source src="audio/nefra.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-nefra').play()">&#9658;</button>
+            - 'to live';
+            <a class="tooltip" href="#word-nefrai"><span class="ipa">n&aelig;fr&#593;&#618;</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-nefrai').play()">&#9658;</button>
+            - 'a place for living', or 'house').
+        </p>
+        <p>
+            For the derivation of nouns we can use the ten verb themes as suffixes as well. For example,
+            <a class="tooltip" href="#word-droerphrfla"><span class="ipa">dr&oslash;rp&#688;rfl&#593;</span></a>
+            <audio id="audio-droerphrfla"><source src="audio/droerphrfla.mp3" type="audio/mp3"></audio>
+            <button class="play-button" onclick="document.getElementById('audio-droerphrfla').play()">&#9658;</button>
+            is 'herd' (
+            <a class="tooltip" href="#word-droerphr"><span class="ipa">dr&oslash;rp&#688;r</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-droerphr').play()">&#9658;</button>
+            - 'cow';
+            <a class="tooltip" href="#word-fla"><span class="ipa">fl&#593;</span></a>
+            <button class="play-button" onclick="document.getElementById('audio-fla').play()">&#9658;</button>
+            - the suffix of the 4th theme, marker of collectivity).
+        </p>
         <h3 id="declension">Declension</h3>
         <h2 id="adjective">Adjective</h2>
         <h3 id="adjective-derivation">Derivation</h3>
@@ -2298,7 +2493,7 @@
                 <button class="play-button" onclick="document.getElementById('audio-ph').play()">&#9658;</button>
                 <ul>
                     <li>
-                        1. <span class="grammar">verbal noun suffix</span> future tense.
+                        <span class="grammar">verbal noun tense suffix</span> future tense.
                     </li>
                 </ul>
             </li>
@@ -2331,7 +2526,7 @@
                 <button class="play-button" onclick="document.getElementById('audio-t').play()">&#9658;</button>
                 <ul>
                     <li>
-                        1. <span class="grammar">verbal noun suffix</span> general tense.
+                        <span class="grammar">verbal noun tense suffix</span> general tense.
                     </li>
                 </ul>
             </li>
@@ -2392,6 +2587,47 @@
                     </li>
                     <li>
                         2. <span class="grammar">verb: main action, present simple indicative</span> is eating.
+                    </li>
+                </ul>
+            </li>
+            <li id="word-troerme">
+                <span class="ipa">tr&oslash;rm&aelig;</span>
+                <button class="play-button" onclick="document.getElementById('audio-troerme').play()">&#9658;</button>
+                <ul>
+                    <li>
+                        1. <span class="grammar">
+                            verbal noun: main action, causative, present tense, direct object verbal noun
+                        </span> feedee, the one who is being fed.
+                    </li>
+                </ul>
+            </li>
+            <li id="word-troermi">
+                <span class="ipa">tr&oslash;rm&#618;</span>
+                <button class="play-button" onclick="document.getElementById('audio-troermi').play()">&#9658;</button>
+                <ul>
+                    <li>
+                        1. <span class="grammar">
+                            verbal noun: main action, causative, present tense, indirect object verbal noun
+                        </span> food.
+                    </li>
+                </ul>
+            </li>
+            <li id="word-troerne">
+                <span class="ipa">tr&oslash;rn&aelig;</span>
+                <button class="play-button" onclick="document.getElementById('audio-troerne').play()">&#9658;</button>
+                <ul>
+                    <li>
+                        1. <span class="grammar">verbal noun: main action, causative, present tense, gerund</span>
+                        feeding.
+                    </li>
+                </ul>
+            </li>
+            <li id="word-troerer">
+                <span class="ipa">tr&oslash;r&aelig;r</span>
+                <button class="play-button" onclick="document.getElementById('audio-troerer').play()">&#9658;</button>
+                <ul>
+                    <li>
+                        1. <span class="grammar">verbal noun: main action, causative, present tense, subject verbal noun</span> feeder.
                     </li>
                 </ul>
             </li>
@@ -2460,7 +2696,7 @@
                 <button class="play-button" onclick="document.getElementById('audio-th').play()">&#9658;</button>
                 <ul>
                     <li>
-                        1. <span class="grammar">verbal noun suffix</span> indefinite future tense.
+                        <span class="grammar">verbal noun tense suffix</span> indefinite future tense.
                     </li>
                 </ul>
             </li>
@@ -2577,7 +2813,7 @@
                 <button class="play-button" onclick="document.getElementById('audio-ch').play()">&#9658;</button>
                 <ul>
                     <li>
-                        1. <span class="grammar">verbal noun suffix</span> indefinite past tense.
+                        <span class="grammar">verbal noun tense suffix</span> indefinite past tense.
                     </li>
                 </ul>
             </li>
@@ -2706,7 +2942,7 @@
                 <button class="play-button" onclick="document.getElementById('audio-kh').play()">&#9658;</button>
                 <ul>
                     <li>
-                        1. <span class="grammar">verbal noun suffix</span> past tense.
+                        <span class="grammar">verbal noun tense suffix</span> past tense.
                     </li>
                 </ul>
             </li>
@@ -2854,6 +3090,24 @@
                     </li>
                 </ul>
             </li>
+            <li id="word-me">
+                <span class="ipa">m&aelig;</span>
+                <button class="play-button" onclick="document.getElementById('audio-me').play()">&#9658;</button>
+                <ul>
+                    <li>
+                        <span class="grammar">verbal noun suffix</span> direct object verbal noun suffix.
+                    </li>
+                </ul>
+            </li>
+            <li id="word-mi">
+                <span class="ipa">m&#618;</span>
+                <button class="play-button" onclick="document.getElementById('audio-mi').play()">&#9658;</button>
+                <ul>
+                    <li>
+                        <span class="grammar">verbal noun suffix</span> indirect object verbal noun suffix.
+                    </li>
+                </ul>
+            </li>
             <li id="word-ne">
                 <span class="ipa">n&aelig;</span>
                 <button class="play-button" onclick="document.getElementById('audio-ne').play()">&#9658;</button>
@@ -2863,6 +3117,29 @@
                     </li>
                     <li>
                         2. <span class="grammar">verb: main action, present simple indicative</span> is, is being.
+                    </li>
+                    <li>
+                        3. <span class="grammar">verbal noun suffix</span> gerund.
+                    </li>
+                </ul>
+            </li>
+            <li id="word-r">
+                <span class="ipa">r</span>
+                <button class="play-button" onclick="document.getElementById('audio-r').play()">&#9658;</button>
+                <ul>
+                    <li>
+                        <span class="grammar">verbal noun suffix</span> subject verbal noun suffix. The same as
+                        <a class="tooltip" href="#word-er"><span class="ipa">&aelig;r</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li id="word-er">
+                <span class="ipa">&aelig;r</span>
+                <button class="play-button" onclick="document.getElementById('audio-r').play()">&#9658;</button>
+                <ul>
+                    <li>
+                        <span class="grammar">verbal noun suffix</span> subject verbal noun suffix. The same as
+                        <a class="tooltip" href="#word-r"><span class="ipa">r</span></a>
                     </li>
                 </ul>
             </li>
