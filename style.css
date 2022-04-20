@@ -162,6 +162,11 @@ html, body {
     font-weight: bold;
 }
 
+.bold {
+    font-weight: bold;
+    color: #564a90;
+}
+
 .grammar {
     color: #888;
     font-style: italic;
