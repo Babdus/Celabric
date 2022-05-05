@@ -13,9 +13,12 @@ html, body {
 }
 
 .sidebar {
+    position: relative;
+    z-index: 1;
+    height: auto;
     padding: 8px 0;
     float: left;
-    width: 240px;
+    width: auto;
     margin-left: calc(calc(100% - 1200px) / 2);
 }
 
@@ -107,7 +110,9 @@ html, body {
 .content {
     float: left;
     width: 680px;
-    padding-left: 20px;
+    position: absolute;
+    left: 0px;
+    padding-left: calc(260px + calc(calc(100% - 1200px) / 2));
     padding-right: calc(calc(100% - 680px) / 2);
 }
 
@@ -238,6 +243,7 @@ html, body {
         margin-left: 0;
     }
     .content {
+        padding-left: 260px;
         padding-right: calc(100% - 940px);
     }
 }
@@ -246,6 +252,7 @@ html, body {
     .content {
         width: calc(100% - 280px);
         padding-right: 20px;
+        padding-left: 260px;
     }
 }
 
@@ -256,6 +263,8 @@ html, body {
     }
 
     .content {
+        position: initial;
+        padding-left: 20px;
         width: calc(100% - 40px);
     }
 }
