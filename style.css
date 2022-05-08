@@ -144,6 +144,12 @@ html, body {
     margin: 10px 0;
 }
 
+.content a {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+}
+
 .content p {
     text-align: justify;
 }
@@ -168,8 +174,10 @@ html, body {
 }
 
 .ipa {
-    color: #9f81fb;
-    font-weight: bold;
+    /*color: #9f81fb;*/
+    color: #888;
+    /*font-weight: bold;*/
+    white-space: nowrap;
 }
 
 .bold {
@@ -190,7 +198,8 @@ html, body {
 .play-button {
     background: none;
     border: none;
-    color: #77a521;
+    /*color: #77a521;*/
+    color: #888;
     font-size: 24px;
     padding: 0;
     line-height: 14px;
