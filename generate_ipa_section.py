@@ -76,7 +76,7 @@ def generate_ipa_sentence_section(sentence, n_tabs=0):
         ipa_sections.append(ipa_section)
     celabric_html = f'\n'.join(celabric_sections)
     ipa_html = f'\n'.join(ipa_sections)
-    html = f'{celabric_html}\n\n{ipa_html}\n{tabs}<audio id="audio-sentence{words[-1]}"><source src="audio/{words[-1]}.mp3" type="audio/mp3"></audio>\n{tabs}<button class="play-button" onclick="document.getElementById(\'audio-{words[-1]}\').play()">&#9658;</button>'
+    html = f'{celabric_html}\n\n{ipa_html}\n{tabs}<audio id="audio-sentence{words[-1]}"><source src="audio/sentence{words[-1]}.mp3" type="audio/mp3"></audio>\n{tabs}<button class="play-button" onclick="document.getElementById(\'audio-sentence{words[-1]}\').play()">&#9658;</button>'
     pyperclip.copy(html)
     return html
 
