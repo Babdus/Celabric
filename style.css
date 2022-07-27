@@ -136,6 +136,18 @@ html, body {
     padding: 10px 0;
 }
 
+.content p.no-margin {
+    margin: 0px;
+}
+
+.content p.no-top-margin {
+    margin-top: 0px;
+}
+
+.content p.no-bottom-margin {
+    margin-bottom: 0px;
+}
+
 .content .message {
     border: 1px solid #888;
     border-radius: 3px;
