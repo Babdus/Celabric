@@ -148,6 +148,10 @@ html, body {
     margin-bottom: 0px;
 }
 
+.content p.align-left {
+    text-align: left;
+}
+
 .content .message {
     border: 1px solid #888;
     border-radius: 3px;
