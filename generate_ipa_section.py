@@ -1,5 +1,5 @@
 import sys
-import pyperclip
+# import pyperclip
 
 
 letters_to_ipa = [
@@ -53,13 +53,18 @@ def word_to_ipa(word):
 
 def generate_ipa_section(word, n_tabs=0):
     if len(word.split('_')) > 1:
-        return generate_ipa_sentence_section(word, n_tabs)
+        return (generate_ipa_sentence_section(word, n_tabs),)
     ipa_word = word_to_ipa(word)
     celabric_word = ipa_to_celabric_word(ipa_word)
     tabs = '    '*n_tabs
-    html = f'{tabs}<a class="tooltip" href="#word-{word}"><span class="celabric">{celabric_word}</span> <span class="ipa">[{ipa_word}]</span></a>\n{tabs}<audio id="audio-{word}"><source src="audio/{word}.mp3" type="audio/mp3"></audio>\n{tabs}<button class="play-button" onclick="document.getElementById(\'audio-{word}\').play()">&#9658;</button>'
-    pyperclip.copy(html)
-    return html
+    celabric_section = f'<span class="celabric">{celabric_word}</span>'
+    ipa_section = f'<span class="ipa">[{ipa_word}]</span>'
+    audio_section = f'<audio id="audio-{word}"><source src="audio/{word}.mp3" type="audio/mp3"></audio>'
+    button_section = f'<button class="play-button" onclick="document.getElementById(\'audio-{word}\').play()">&#9658;</button>'
+    sections = {'celabric': celabric_section, 'ipa': ipa_section, 'audio': audio_section, 'button': button_section}
+    html = f'{tabs}<a class="tooltip" href="#word-{word}">{celabric_section} {ipa_section}</a>\n{tabs}{audio_section}\n{tabs}{button_section}'
+    # pyperclip.copy(html)
+    return html, sections
 
 
 def generate_ipa_sentence_section(sentence, n_tabs=0):
@@ -77,8 +82,8 @@ def generate_ipa_sentence_section(sentence, n_tabs=0):
     celabric_html = f'\n'.join(celabric_sections)
     ipa_html = f'\n'.join(ipa_sections)
     html = f'{celabric_html}\n\n{ipa_html}\n{tabs}<audio id="audio-sentence{words[-1]}"><source src="audio/sentence{words[-1]}.mp3" type="audio/mp3"></audio>\n{tabs}<button class="play-button" onclick="document.getElementById(\'audio-sentence{words[-1]}\').play()">&#9658;</button>'
-    pyperclip.copy(html)
+    # pyperclip.copy(html)
     return html
 
-
-print(generate_ipa_section(sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else 0))
+if __name__ == "__main__":
+    print(generate_ipa_section(sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else 0)[0])
