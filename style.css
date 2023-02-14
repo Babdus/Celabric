@@ -46,7 +46,7 @@ html, body {
 .column {
     display: inline-block;
     vertical-align: top;
-    height: 100%;
+    height: calc(100% - 121px);
     overflow: scroll;
     overflow-x: auto;
 }
