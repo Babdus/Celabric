@@ -270,6 +270,20 @@ html, body {
     display: block;
 }
 
+.content li:target {
+    animation-duration: 2s;
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    from {
+        background-color: #ffffaa;
+    }
+    to {
+        background-color: white;
+    }
+}
+
 .content ul li ul {
     padding-inline-start: 24px;
 }
