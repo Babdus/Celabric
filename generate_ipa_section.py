@@ -1,5 +1,5 @@
 import sys
-# import pyperclip
+import pyperclip
 
 
 letters_to_ipa = [
@@ -63,7 +63,7 @@ def generate_ipa_section(word, n_tabs=0):
     button_section = f'<button class="play-button" onclick="document.getElementById(\'audio-{word}\').play()">&#9658;</button>'
     sections = {'celabric': celabric_section, 'ipa': ipa_section, 'audio': audio_section, 'button': button_section}
     html = f'{tabs}<a class="tooltip" href="#word-{word}">{celabric_section} {ipa_section}</a>\n{tabs}{audio_section}\n{tabs}{button_section}'
-    # pyperclip.copy(html)
+    pyperclip.copy(html)
     return html, sections
 
 
