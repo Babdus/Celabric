@@ -85,5 +85,6 @@ def generate_ipa_sentence_section(sentence, n_tabs=0):
     # pyperclip.copy(html)
     return html
 
+
 if __name__ == "__main__":
     print(generate_ipa_section(sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else 0)[0])
