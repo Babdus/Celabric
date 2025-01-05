@@ -189,9 +189,15 @@ html, body {
 .content .message {
     border: 1px solid #888;
     border-radius: 3px;
-    background: #ffffaa;
+    background: #fff4e8;
     padding: 0 10px;
     margin: 10px 0;
+}
+
+.content .message .celabric {
+    font-family: celabric;
+    font-size: 48px;
+    color: #4a4444;
 }
 
 .content a {
