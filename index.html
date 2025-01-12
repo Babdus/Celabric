@@ -226,7 +226,12 @@
         <div class="message">
             <textarea id="textarea1" rows="5" cols="60" style="margin: 10px; width: calc(100% - 20px);"></textarea>
         </div>
-        <button id="copyButton">Convert to Celabric</button>
+        <div id="fontSizeDiv">
+            <button id="copyButton">Convert to Celabric</button>
+            <label for="fontSizeInput">Font size: </label>
+            <input type="text" id="fontSizeInput" placeholder="Enter font size" />
+            <button id="applyFontSizeButton">Apply Font Size</button>
+        </div>
         <div class="message">
             <p class="align-left">
                 <span id="outputSpan" class="celabric">
@@ -238,6 +243,17 @@
             document.getElementById("copyButton").addEventListener("click", function() {
                 const text1 = document.getElementById("textarea1").value;
                 document.getElementById("outputSpan").textContent = text1;
+            });
+                document.getElementById("applyFontSizeButton").addEventListener("click", function() {
+                const fontSize = document.getElementById("fontSizeInput").value;
+                const outputSpan = document.getElementById("outputSpan");
+
+                // Validate font size
+                if (/^\d+px$/.test(fontSize)) {
+                    outputSpan.style.fontSize = fontSize;
+                } else {
+                    alert("Please enter a valid font size (e.g., 16px).");
+                }
             });
         </script>
         <div class="message">
